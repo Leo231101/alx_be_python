@@ -11,10 +11,11 @@ def main():
             print(f"{number} * {i} = {product}")
     
     except ValueError:
-        print("Invalid input. Please enter a valid integer.")
+        print(f"Invalid input. Please enter a valid integer.")
 
 # Ensures that the main function runs when the script is executed
 if __name__ == "__main__":
     main()
+
 
 
