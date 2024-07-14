@@ -13,33 +13,28 @@ class TestSimpleCalculator(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-    # test_simple_calculator.py
-
-class TestSimpleCalculator(unittest.TestCase):
-    # ... (setUp method remains the same)
-
 # test_simple_calculator.py
 
 class TestSimpleCalculator(unittest.TestCase):
     # ... (setUp method remains the same)
 
-    def test_subtraction(self):
-        """Test the subtract method."""
-        self.assertEqual(self.calc.subtract(5, 3), 2)  # 5 - 3 = 2
-        self.assertEqual(self.calc.subtract(3, 5), -2)  # 3 - 5 = -2
-        # Add more assertions to thoroughly test the subtract method:
+    def test_addition(self):
+        """Test the addition method."""
+        self.assertEqual(self.calc.add(2, 3), 5)  # 2 + 3 = 5
+        self.assertEqual(self.calc.add(-1, 1), 0)  # -1 + 1 = 0
+        # Add more assertions to thoroughly test the add method:
         # - Test with large positive numbers
         # - Test with large negative numbers
         # - Test with zero
         # - Test with decimal numbers
         # - Test with mixed positive and negative numbers
 
-    # Write similar test methods for multiply and divide
+    # Write similar test methods for subtract, multiply, and divide
     # ...
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
 
